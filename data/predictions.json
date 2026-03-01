@@ -1,0 +1,492 @@
+[
+  {
+    "index": 1,
+    "category": "Sports & Entertainment",
+    "prediction": "NBA Champion",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "OKC", "Sibi": "OKC", "Nikhil": "OKC"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 2,
+    "category": "Sports & Entertainment",
+    "prediction": "NBA MVP",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "SGA", "Sibi": "SGA", "Nikhil": "SGA"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 3,
+    "category": "Sports & Entertainment",
+    "prediction": "Super Bowl Champion",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Buffalo", "Sibi": "LAR", "Nikhil": "Seattle"},
+    "tokens": {"Nikhil": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 4,
+    "category": "Sports & Entertainment",
+    "prediction": "F1 Driver's Championship winner",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Max Verstappen", "Sibi": "Oscar", "Nikhil": "Norris"},
+    "tokens": {"Arnav": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 5,
+    "category": "Sports & Entertainment",
+    "prediction": "F1 Constructor's Championship winner",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "McLaren", "Sibi": "Mercedes", "Nikhil": "Mercedes"},
+    "tokens": {"Sibi": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 6,
+    "category": "Sports & Entertainment",
+    "prediction": "Artist with the Top Billboard song of the year",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Drake", "Sibi": "Sabrina Carpenter", "Nikhil": "BTS"},
+    "tokens": {"Nikhil": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 7,
+    "category": "Sports & Entertainment",
+    "prediction": "Giannis traded, anytime CY 2026.",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 8,
+    "category": "Sports & Entertainment",
+    "prediction": "Lewis Hamilton announces retirement mid-season (anytime before the end of the final race).",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 9,
+    "category": "Sports & Entertainment",
+    "prediction": "Another big gambling scandal for a big 4 league",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 10,
+    "category": "Sports & Entertainment",
+    "prediction": "One of the Big 3 IPL Teams (Mumbai, Chennai, Bengaluru) to win the league in 2026",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 11,
+    "category": "Sports & Entertainment",
+    "prediction": "India to win 2026 T20 World Cup",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 12,
+    "category": "Sports & Entertainment",
+    "prediction": "Winner of FIFA World Cup",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Argentina", "Sibi": "Spain", "Nikhil": "Spain"},
+    "tokens": {"Nikhil": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 13,
+    "category": "Sports & Entertainment",
+    "prediction": "Canada makes it past the group stage for FIFA WC",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 14,
+    "category": "Sports & Entertainment",
+    "prediction": "Country with the most number of gold medals at the 2026 Winter Olympics",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Norway", "Sibi": "Norway", "Nikhil": "Norway"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 15,
+    "category": "Sports & Entertainment",
+    "prediction": "Who wins most grand slams this year?",
+    "type": "multi_outcome",
+    "picks": {"Arnav": "Alcatraz", "Sibi": "Alcaraz", "Nikhil": "Sinner"},
+    "tokens": {"Arnav": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 16,
+    "category": "World/Public Events",
+    "prediction": "Ukraine peace deal is signed by both Russia and Ukraine (regardless of if it holds)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 17,
+    "category": "World/Public Events",
+    "prediction": "Argentina's inflation is <20%",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 18,
+    "category": "World/Public Events",
+    "prediction": "Bank of Canada total rate cut <1%",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 19,
+    "category": "World/Public Events",
+    "prediction": "US unemployment > 5% at any point in the year (Bureau of Labor Statistics)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 20,
+    "category": "World/Public Events",
+    "prediction": "Canada has federal elections.",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 21,
+    "category": "World/Public Events",
+    "prediction": "OpenAI IPOs",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 22,
+    "category": "World/Public Events",
+    "prediction": "AI Bubble pops (Nasdaq Composite falls \u226525%)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 23,
+    "category": "World/Public Events",
+    "prediction": "S&P 500 gains more than 10% in the year.",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 24,
+    "category": "World/Public Events",
+    "prediction": "S&P 500 falls more than 10% in the year.",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 25,
+    "category": "World/Public Events",
+    "prediction": "One of us buys SpaceX if it IPOs (likely Sibi)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": "What if it doesn't IPO?"
+  },
+  {
+    "index": 26,
+    "category": "World/Public Events",
+    "prediction": "XEQT outperforms the S&P",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "N", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 27,
+    "category": "World/Public Events",
+    "prediction": "JD Vance becomes the president.",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 28,
+    "category": "World/Public Events",
+    "prediction": "Democrats to gain majority in the House of Representatives",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 29,
+    "category": "World/Public Events",
+    "prediction": "At least one Southern Ontario-based (below Barrie) nationwide project to be announced in 2026 by Major Projects Office.",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {"Sibi": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 30,
+    "category": "World/Public Events",
+    "prediction": "At least 3 more countries ban social media usage for people between the ages of 12-19.",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 31,
+    "category": "World/Public Events",
+    "prediction": "NATO deploys permanent troops in a new Eastern European country (excl. Poland)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 32,
+    "category": "World/Public Events",
+    "prediction": "Canada introduces a new federal climate regulation or emissions cap (incl. carbon tax, cap and trade).",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 33,
+    "category": "World/Public Events",
+    "prediction": "Global EV sales growth fall year-over-year",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 34,
+    "category": "World/Public Events",
+    "prediction": "Israel conducts a ground operation outside Gaza (Lebanon, Syria, or West Bank escalation)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 35,
+    "category": "World/Public Events",
+    "prediction": "Iran enriches uranium beyond 90% purity or formally withdraws from the NPT",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 36,
+    "category": "World/Public Events",
+    "prediction": "A major (top 20) Chinese property developer defaults",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 37,
+    "category": "World/Public Events",
+    "prediction": "India's Sensex grows at least 2% faster than the Shanghai Composite",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 38,
+    "category": "World/Public Events",
+    "prediction": "India's GDP grows at least 2% faster than China's GDP",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 39,
+    "category": "World/Public Events",
+    "prediction": "US does strikes on another country in the Americas (south of the US).",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 40,
+    "category": "World/Public Events",
+    "prediction": "China makes a meaningful invasion of Taiwan - hostile seizure of land / island",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 41,
+    "category": "World/Public Events",
+    "prediction": "US strikes Iran",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 42,
+    "category": "Friend Life Events",
+    "prediction": "At least one of us switches companies",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "Y", "Nikhil": "N"},
+    "tokens": {"Sibi": true},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 43,
+    "category": "Friend Life Events",
+    "prediction": "At least one of us gets promoted",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": true,
+    "notes": ""
+  },
+  {
+    "index": 44,
+    "category": "Friend Life Events",
+    "prediction": "Arnav spends more than half the year outside of Canada.",
+    "type": "yes_no",
+    "picks": {"Arnav": "Y", "Sibi": "Y", "Nikhil": "Y"},
+    "tokens": {},
+    "anti_dogpile": true,
+    "notes": ""
+  },
+  {
+    "index": 45,
+    "category": "Friend Life Events",
+    "prediction": "Any two of us travel (together), outside of Ontario (other than in India).",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": true,
+    "notes": ""
+  },
+  {
+    "index": 46,
+    "category": "Friend Life Events",
+    "prediction": "One of us moves to a different city for work (not just move out)",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": true,
+    "notes": ""
+  },
+  {
+    "index": 47,
+    "category": "Wildcard",
+    "prediction": "One of us finds god",
+    "type": "yes_no",
+    "picks": {"Arnav": "N", "Sibi": "N", "Nikhil": "N"},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": ""
+  },
+  {
+    "index": 48,
+    "category": "Wildcard",
+    "prediction": "Reads most books - over 150 pages, excl. audiobooks.",
+    "type": "wildcard_competition",
+    "picks": {"Arnav": "N/A", "Sibi": "", "Nikhil": ""},
+    "tokens": {"Arnav": true},
+    "anti_dogpile": false,
+    "notes": "Winner is whoever reads the most books. Tracked via Book Log."
+  },
+  {
+    "index": 49,
+    "category": "Wildcard",
+    "prediction": "Takes the most number of flight journeys.",
+    "type": "wildcard_competition",
+    "picks": {"Arnav": "", "Sibi": "", "Nikhil": ""},
+    "tokens": {},
+    "anti_dogpile": false,
+    "notes": "Winner is whoever takes the most flights. Tracked via Flight Log."
+  }
+]
