@@ -1,13 +1,5 @@
 [
   {
-    "id": "init-001",
-    "person": "Nikhil",
-    "from_airport": "",
-    "to_airport": "YYC",
-    "date": "",
-    "date_logged": "2026-01-15"
-  },
-  {
     "id": "init-002",
     "person": "Nikhil",
     "from_airport": "",
