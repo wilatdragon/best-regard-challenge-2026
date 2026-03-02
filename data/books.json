@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "a35b38a2",
+    "person": "Arnav",
+    "title": "Between the World and Me",
+    "author": "Ta-Nehisi Coates",
+    "pages": 176,
+    "rating": 5.0,
+    "date_finished": "2026-01-31",
+    "date_logged": "2026-03-02"
+  }
+]
