@@ -11,5 +11,18 @@
     "finalized_date": "2026-02-28",
     "finalized_by": "Arnav",
     "notes": ""
+  },
+  "3": {
+    "status": "finalized",
+    "actual_outcome": "Seattle",
+    "prediction_type": "multi_outcome",
+    "results": {
+      "Arnav": "incorrect",
+      "Sibi": "incorrect",
+      "Nikhil": "exact"
+    },
+    "finalized_date": "2026-02-08",
+    "finalized_by": "Arnav",
+    "notes": ""
   }
 }
