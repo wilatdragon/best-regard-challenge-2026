@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "cc6c263b",
+    "person": "Arnav",
+    "title": "test",
+    "author": "",
+    "pages": 176,
+    "rating": 3.5,
+    "date_finished": "2026-03-02",
+    "date_logged": "2026-03-02"
+  }
+]
