@@ -5,7 +5,7 @@
 import streamlit as st
 from datetime import date
 
-from data_manager import load_data
+from data_manager import load_data, get_persistence_mode, get_last_persistence_error
 from scoring import (
     calculate_all_scores, get_book_counts, get_flight_counts,
     PLAYERS, PLAYER_COLORS, CATEGORIES, CATEGORY_COLORS,
@@ -94,6 +94,20 @@ with st.sidebar:
     st.markdown("# 🏆 Best Regard 2026")
     st.caption("Arnav · Sibi · Nikhil")
     st.markdown("---")
+
+    persistence_mode = get_persistence_mode()
+    if persistence_mode == "github":
+        st.success("Persistence: GitHub (durable across app restarts)")
+    else:
+        st.warning(
+            "Persistence: Local only (Streamlit sleep/restart can reset data). "
+            "Add GitHub secrets to make data durable."
+        )
+
+    last_error = get_last_persistence_error()
+    if last_error:
+        st.error(f"Last save error: {last_error}")
+
     if st.button("🔄 Refresh Data", use_container_width=True):
         from data_manager import invalidate_cache
         invalidate_cache()

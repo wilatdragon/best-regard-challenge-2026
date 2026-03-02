@@ -39,7 +39,7 @@ def _github_read(filename):
     branch = st.secrets["github"].get("branch", "main")
     data_path = st.secrets["github"].get("data_path", "data")
     url = f"https://api.github.com/repos/{repo}/contents/{data_path}/{filename}"
-    resp = requests.get(url, headers=_github_headers(), params={"ref": branch})
+    resp = requests.get(url, headers=_github_headers(), params={"ref": branch}, timeout=20)
     if resp.status_code == 200:
         payload = resp.json()
         sha = payload["sha"]
@@ -64,10 +64,21 @@ def _github_write(filename, data, sha=None):
     }
     if sha:
         body["sha"] = sha
-    resp = requests.put(url, headers=_github_headers(), json=body)
+    resp = requests.put(url, headers=_github_headers(), json=body, timeout=20)
     if resp.status_code in (200, 201):
         new_sha = resp.json().get("content", {}).get("sha")
         return True, new_sha
+
+    # Handle stale SHA conflicts by re-reading and retrying once.
+    if resp.status_code == 409:
+        _, fresh_sha = _github_read(filename)
+        if fresh_sha:
+            body["sha"] = fresh_sha
+            retry = requests.put(url, headers=_github_headers(), json=body, timeout=20)
+            if retry.status_code in (200, 201):
+                new_sha = retry.json().get("content", {}).get("sha")
+                return True, new_sha
+
     return False, None
 
 
@@ -114,16 +125,26 @@ def save_data(filename, data):
     st.session_state[cache_key] = data
 
     if _has_github_config():
-        sha = st.session_state.get(f"_sha_{filename}")
-        ok, new_sha = _github_write(filename, data, sha)
-        if ok and new_sha:
-            st.session_state[f"_sha_{filename}"] = new_sha
-        return ok
+        try:
+            sha = st.session_state.get(f"_sha_{filename}")
+            ok, new_sha = _github_write(filename, data, sha)
+            if ok and new_sha:
+                st.session_state[f"_sha_{filename}"] = new_sha
+                st.session_state["_last_persistence_error"] = ""
+            else:
+                st.session_state["_last_persistence_error"] = (
+                    f"GitHub write failed for {filename}."
+                )
+            return ok
+        except Exception as exc:
+            st.session_state["_last_persistence_error"] = str(exc)
+            return False
     else:
         filepath = os.path.join(DATA_DIR, filename)
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, default=str)
+        st.session_state["_last_persistence_error"] = ""
         return True
 
 
@@ -136,3 +157,13 @@ def invalidate_cache(filename=None):
         keys = [k for k in st.session_state if k.startswith("_data_")]
         for k in keys:
             del st.session_state[k]
+
+
+def get_persistence_mode():
+    """Return persistence backend in use: github or local."""
+    return "github" if _has_github_config() else "local"
+
+
+def get_last_persistence_error():
+    """Return latest persistence error string, if any."""
+    return st.session_state.get("_last_persistence_error", "")

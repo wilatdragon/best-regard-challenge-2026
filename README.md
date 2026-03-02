@@ -29,7 +29,7 @@ The app uses local JSON files in `data/` for persistence.
 1. Push this folder to a GitHub repo.
 2. Go to [share.streamlit.io](https://share.streamlit.io) and connect the repo.
 3. Set the main file path to `Home.py`.
-4. **(Optional)** For GitHub-backed persistence, add these secrets in Streamlit Cloud:
+4. **(Required for durable data)** Add these secrets in Streamlit Cloud:
 
 ```toml
 [github]
@@ -39,8 +39,18 @@ branch = "main"
 data_path = "data"
 ```
 
-Without GitHub secrets, the app defaults to local filesystem reads/writes
-(which work fine on Streamlit Cloud but don't persist across redeploys).
+Without GitHub secrets, the app writes to local ephemeral storage in the Streamlit
+container. When the app sleeps/restarts, data can reset to repository defaults.
+
+### GitHub Token Permissions
+
+Your token must be able to update files in the repository:
+
+- Classic token: `repo` scope
+- Fine-grained token: repository access to this repo + `Contents: Read and write`
+
+After adding secrets, restart the app in Streamlit Cloud once. The sidebar on
+the Home page should show: `Persistence: GitHub (durable across app restarts)`.
 
 ## Project Structure
 
