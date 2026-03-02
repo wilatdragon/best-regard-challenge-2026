@@ -1,14 +1,14 @@
 {
-  "3": {
+  "41": {
     "status": "finalized",
-    "actual_outcome": "Seattle",
-    "prediction_type": "multi_outcome",
+    "actual_outcome": "Y",
+    "prediction_type": "yes_no",
     "results": {
-      "Arnav": "incorrect",
-      "Sibi": "incorrect",
-      "Nikhil": "exact"
+      "Arnav": "correct",
+      "Sibi": "correct",
+      "Nikhil": "correct"
     },
-    "finalized_date": "2026-02-08",
+    "finalized_date": "2026-02-28",
     "finalized_by": "Arnav",
     "notes": ""
   }
