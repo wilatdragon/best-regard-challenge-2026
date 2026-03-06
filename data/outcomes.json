@@ -24,5 +24,18 @@
     "finalized_date": "2026-02-08",
     "finalized_by": "Arnav",
     "notes": ""
+  },
+  "14": {
+    "status": "finalized",
+    "actual_outcome": "Norway",
+    "prediction_type": "multi_outcome",
+    "results": {
+      "Arnav": "exact",
+      "Sibi": "exact",
+      "Nikhil": "exact"
+    },
+    "finalized_date": "2026-02-22",
+    "finalized_by": "Arnav",
+    "notes": ""
   }
 }
