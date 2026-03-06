@@ -6,5 +6,13 @@
     "to_airport": "SJU",
     "date": "2026-01-05",
     "date_logged": "2026-03-06"
+  },
+  {
+    "id": "ea813fbe",
+    "person": "Arnav",
+    "from_airport": "SJU",
+    "to_airport": "YYZ",
+    "date": "2026-03-05",
+    "date_logged": "2026-03-06"
   }
 ]
