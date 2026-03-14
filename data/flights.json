@@ -22,5 +22,13 @@
     "to_airport": "YYC",
     "date": "2026-01-14",
     "date_logged": "2026-03-14"
+  },
+  {
+    "id": "a52a387f",
+    "person": "Nikhil",
+    "from_airport": "YYC",
+    "to_airport": "YYZ",
+    "date": "2026-01-18",
+    "date_logged": "2026-03-14"
   }
 ]
